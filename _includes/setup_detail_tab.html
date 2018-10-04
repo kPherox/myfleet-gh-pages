@@ -15,4 +15,7 @@
     </nav>
 </section>
 
-<script>$(function(){$('#navbar').affix({offset:{top:400,bottom:400}}).on('affix.bs.affix',function(){$(this).css({'top':'0'});});$('body').scrollspy({target:'nav.navbar'});});</script>
+<script>functions.push(() => {
+    $('#navbar').affix({offset: {top: 400, bottom: 400}}).on('affix.bs.affix', function() {$(this).css({'top': '0'})});
+    $('body').scrollspy({target: 'nav.navbar'});
+});</script>

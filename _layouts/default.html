@@ -9,10 +9,10 @@
         <title>{{ page.title | default: site.title }}</title>
 
         <link rel="stylesheet" href="{{ '/assets/css/common.css?v=' | append: site.github.build_revision | relative_url' }}" />
+        <script>let functions = []</script>
     </head>
 
     <body>
-
         {% include header.html %}
 
         <div class="container theme-showcase" role="main">
@@ -23,5 +23,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.2.1/js/bootstrap-switch.min.js"></script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+        <script>functions.forEach(f => {f()})</script>
     </body>
 </html>

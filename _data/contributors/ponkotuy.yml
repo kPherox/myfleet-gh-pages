@@ -1,0 +1,23 @@
+
+name: ぽんこつ
+comment: 最近は結構PullRequest貰えますが、昔はほぼ1人でやってました。SakuraのサーバでMyFleetGirls動かしてます
+links:
+  - name: ぽんこつ提督
+    url: ({{ site.productUrl }}/user/10007732
+
+  - name: Twitter(@ponkotuy)
+    url: https://twitter.com/ponkotuy/
+
+  - name: GitHub(ponkotuy)
+    url: https://github.com/ponkotuy/
+
+  - name: TrainStampRally
+    url: https://train.ponkotuy.com/
+    description: (自作のスタンプラリーゲームです)
+
+  - name: Amazon欲しい物リスト
+    url: https://www.amazon.co.jp/registry/wishlist/24XYZ0PSKBDSE
+
+  - name: メール
+    url: mailto:web@ponkotuy.com
+    description: （あんまチェックしてないので他の連絡手段との併用を推奨。Twitterにメールしましたリプをするとか

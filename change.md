@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: page
 title: 更新情報
 permalink: /change
 ---
 
-<section id="change_log">
+<section id="change_log" markdown="1">
 
 ## [Change Log](https://github.com/ttdoda/MyFleetGirls/releases)
 
@@ -13,7 +13,7 @@ permalink: /change
 
 </section>
 
-<section id="old_change_log">
+<section id="old_change_log" markdown="1">
 
 ## 過去のChange Log
 

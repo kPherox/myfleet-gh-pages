@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 作者情報
 permalink: /author
 ---

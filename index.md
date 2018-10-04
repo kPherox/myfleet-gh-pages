@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 title: {{ site.title }}
 ---
 
-<section id="about">
+<section id="about" markdown="1">
 
 ## なにこれ
 
@@ -16,7 +16,7 @@ title: {{ site.title }}
 
 </section>
 
-<section id="getstarted">
+<section id="getstarted" markdown="1">
 
 ## インストール・使い方
 

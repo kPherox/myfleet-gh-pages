@@ -1,0 +1,7 @@
+
+version: 0.9.3
+
+changes:
+  server:
+    - description: 名前から装備開発レシピが検索できる機能追加
+    - description: 極稀に提督Lvランキングで重複するバグを修正

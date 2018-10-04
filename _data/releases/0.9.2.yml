@@ -1,0 +1,7 @@
+
+version: 0.9.2
+
+changes:
+  server:
+    - description: 装備開発統計を追加
+    - description: Conditionの色を変更

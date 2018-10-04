@@ -1,0 +1,9 @@
+
+version: 0.9.1
+
+changes:
+  client:
+    - description: ダウンローダサイズ圧縮（ダウンローダーが6MB→12KB）
+    - description: ダウンローダ仕様変更（手動で再インストールが必要です）
+  server:
+    - description: Material Viewの謎の表示を削除

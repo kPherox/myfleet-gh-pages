@@ -1,0 +1,12 @@
+
+version: 0.9.0
+
+changes:
+  common:
+    - description: Client自動アップデート機能を追加
+    - description: 艦種を表示
+    - description: 高速建造をONにして建造すると建造データが送られないバグを修正
+  client:
+    - description: 装備開発で間違ったFlagshipを送るバグを修正
+  server:
+    - description: 新規登録提督が間違っているバグを修正

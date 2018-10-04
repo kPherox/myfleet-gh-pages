@@ -1,0 +1,6 @@
+
+version: 0.9.5
+
+changes:
+  server:
+    - description: ドックでサウンドが鳴る機能を追加

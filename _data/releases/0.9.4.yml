@@ -1,0 +1,8 @@
+
+version: 0.9.4
+
+changes:
+  common:
+    - description: とある機能の仕込み
+  server:
+    - description: 細いUIの修正

@@ -1,0 +1,6 @@
+
+version: 0.9.6
+
+changes:
+  server:
+    - description: ドックをリアルタイムに更新する修正

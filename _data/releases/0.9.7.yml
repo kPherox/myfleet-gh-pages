@@ -1,0 +1,6 @@
+
+version: 0.9.7
+
+changes:
+  server:
+    - description: 経験値表示形式を％表示から総取得経験値に変更

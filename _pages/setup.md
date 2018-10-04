@@ -15,7 +15,7 @@ permalink: /setup_detail
 
 MyFleetGirlsのセットアップの方法をちょこっとだけ詳しく説明して、導入を簡単にするのが目的のドキュメントです。
 
-導入順序は[こちら]({{ '/' | relative_url' }})の、「インストール・使い方」に準じて進めていきます。
+導入順序は[こちら]({{ '/' | relative_url }})の、「インストール・使い方」に準じて進めていきます。
 
 こちらの説明で困らずにセットアップできた方はこれを読まなくても何の問題もありません。
 
@@ -40,13 +40,13 @@ MyFleetGirlsのセットアップの方法をちょこっとだけ詳しく説�
 まずコマンドプロンプトを開きます。
 
 コマンドプロンプトって何？って人は、デスクトップ左下の「スタート」のクリックして「プログラムとファイルの検索」に`cmd`と入力して<kbd>Enter</kbd>を押します。
-<img src="@Image.setup("cmd")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/cmd.png' | relative_url }}" class="img-rounded" />
 
 そうすると、黒い画面が出てきますので、`java -version`と入力し、<kbd>Enter</kbd>を押します。
-<img src="@Image.setup("java_cmd")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/java_cmd.png' | relative_url }}" class="img-rounded" />
 
 もしJavaが正常に設定されていれば、このコマンドによってJavaのバージョンが確認できます。
-<img src="@Image.setup("java_version")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/java_version.png' | relative_url }}" class="img-rounded" />
 
 `java version`の後の数字がJavaのバージョンです。
 
@@ -57,7 +57,7 @@ MyFleetGirlsはJava8以上のバージョンが必須なので、`1.6.なんと�
 問題は上記のように表示されなかった場合です。
 
 恐らく、このように表示されます。
-<img src="@Image.setup("non_java")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/non_java.png' | relative_url }}" class="img-rounded" />
 
 大きく分けて次の二つの場合が考えられますので、順番に確認します。
 
@@ -67,10 +67,10 @@ MyFleetGirlsはJava8以上のバージョンが必須なので、`1.6.なんと�
 ### Javaがインストールされていない場合の対応方法
 
 デスクトップ右下の「スタート」をクリックして「コントロールパネル」を開きましょう。
-<img src="@Image.setup("control_panel")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/control_panel.png' | relative_url }}" class="img-rounded" />
 
 その中にJavaがあれば問題ありませんので、2の対応に移ってください。
-<img src="@Image.setup("control_java")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/control_java.png' | relative_url }}" class="img-rounded" />
 
 無い場合は、公式サイトからダウンロードしてインストールを行いましょう。
 [公式ダウンロードサイト](https://java.com/ja/download/)
@@ -88,7 +88,7 @@ Javaがインストールされていれば、以下のように辿ればJavaの
 
 <pre>Cフォルダ ⇒ Program Files (x86) ⇒ Java</pre>
 
-<img src="@Image.setup("jre_dir")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/jre_dir.png' | relative_url }}" class="img-rounded" />
 
 このJavaのフォルダの中にバージョンごとのJavaがあります。
 
@@ -105,38 +105,38 @@ jreの後の数字は、「jre7」のように一つだけならそのバージ�
 <pre>jre1.8.0_25 ⇒ bin</pre>
 
 ここが目的のJavaの実行場所です。
-<img src="@Image.setup("address_bar")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/address_bar.png' | relative_url }}" class="img-rounded" />
 
 そうしましたら、上の画像の赤で囲っているアドレスバーの何も無いところをクリックして下さい。
 
 そうすると、このアドレスをコピーできるようになりますので、コピーしましょう。
-<img src="@Image.setup("address_bar2")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/address_bar2.png' | relative_url }}" class="img-rounded" />
 
 メモ帳を開いていったん貼り付けます。
 
 そして、<strong>先頭に半角セミコロン`;`を加えてください。</strong>
-<img src="@Image.setup("memo_colon")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/memo_colon.png' | relative_url }}" class="img-rounded" />
 
 この値を「環境変数」の「Path」に加えたら完成です。
 
 コントロールパネルから「システム」を選択してください。
-<img src="@Image.setup("system")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/system.png' | relative_url }}" class="img-rounded" />
 
 次に左のほうにある「システムの詳細設定」を選択します。
-<img src="@Image.setup("system_detail")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/system_detail.png' | relative_url }}" class="img-rounded" />
 
 そうすると、システムのプロパティ画面が開きます。
 
 「詳細設定」のタブを選び、下のほうの「環境変数」のボタンをクリックしてください。
-<img src="@Image.setup("system_property")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/system_property.png' | relative_url }}" class="img-rounded" />
 
 環境変数の画面が開きますので、下の「システム環境変数」から「Path」を探してクリックして選択し、「編集」ボタンを押します。
-<img src="@Image.setup("environment")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/environment.png' | relative_url }}" class="img-rounded" />
 
 そしたら、さっきメモ帳で作成した文字列を変数値の一番最後に加えます。
 
 <strong>必ず一番最後です</strong>間違ったらキャンセルで閉じてやり直してください。
-<img src="@Image.setup("add_environment")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/add_environment.png' | relative_url }}" class="img-rounded" />
 
 これで作業完了です、各画面を「ok」ボタンで閉じてください。
 
@@ -165,7 +165,7 @@ jreの後の数字は、「jre7」のように一つだけならそのバージ�
 解凍ソフトが無い場合は、ダウンロードしたZipファイルを右クリックし、「すべて展開」を選んだ後に「展開」ボタンを押してください。
 
 下の画像のようにフォルダが展開されれば成功です。
-<img src="@Image.setup("extract")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/extract.png' | relative_url }}" class="img-rounded" />
 
 
 ## Proxy設定
@@ -188,13 +188,13 @@ MyFleetGirlsを使用しながら艦これをプレイするには、プロキ�
 「LANの設定」を変更します。
 
 IEを開いて右上の歯車のマークの「ツール」をクリックし「インターネットオプション」を開きます。
-<img src="@Image.setup("ie_option")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/ie_option.png' | relative_url }}" class="img-rounded" />
 
 「接続」タブを選択して「LANの設定」を開きます。
-<img src="@Image.setup("ie_connection")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/ie_connection.png' | relative_url }}" class="img-rounded" />
 
 「自動構成スクリプトを使用する」にチェックを入れて、アドレスに[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加え「OK」を押します。
-<img src="@Image.setup("ie_proxy")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/ie_proxy.png' | relative_url }}" class="img-rounded" />
 
 以上で設定は完了です。
 
@@ -208,19 +208,19 @@ MyFleetGirlsを使用しないで艦これをプレイする場合はこの「�
 IEと同じように「LANの設定」を変更しますが、開く手順が違います。
 
 まず、Chromeを開いてから右上の三本線の「ツール」を開き、「設定」を開きます。
-<img src="@Image.setup("chrome_option")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/chrome_option.png' | relative_url }}" class="img-rounded" />
 
 設定のタブが開きますので、一番下の「詳細設定を表示」をクリックします。
-<img src="@Image.setup("chrome_settings_detail")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/chrome_settings_detail.png' | relative_url }}" class="img-rounded" />
 
 そうしたら画面の下に詳細設定が開きますので、「ネットワーク」のプロキシ「設定の変更」をクリック、「インターネットのプロパティ」を開きます。
-<img src="@Image.setup("chrome_change_proxy")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/chrome_change_proxy.png' | relative_url }}" class="img-rounded" />
 
 「接続」タブを選択して「LANの設定」を開きます。
-<img src="@Image.setup("ie_connection")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/ie_connection.png' | relative_url }}" class="img-rounded" />
 
 「自動構成スクリプトを使用する」にチェックを入れて、アドレスに[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加え「OK」を押します。
-<img src="@Image.setup("ie_proxy")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/ie_proxy.png' | relative_url }}" class="img-rounded" />
 
 以上で設定は完了です。
 
@@ -234,13 +234,13 @@ MyFleetGirlsを使用しないで艦これをプレイする場合はこの「�
 Firefoxを開いてキーボードの「Alt」を押してメニューを開きます。
 
 そして、「ツール」⇒「オプション」を開きます。
-<img src="@Image.setup("firefox_option")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/firefox_option.png' | relative_url }}" class="img-rounded" />
 
 「ネットワーク」タブから「接続設定」をクリックします。
-<img src="@Image.setup("firefox_connection")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/firefox_connection.png' | relative_url }}" class="img-rounded" />
 
 「自動プロキシ設定スクリプトURL」を選択し、画像のように[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加えて「OK」をクリックします。
-<img src="@Image.setup("firefox_proxy")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/firefox_proxy.png' | relative_url }}" class="img-rounded" />
 
 以上で設定は完了です。
 
@@ -255,10 +255,10 @@ MyFleetGirlsを使用しないで艦これをプレイする場合は<strong>「
 プロキシの設定が終わったらMyFleetGirlsを起動します。
 
 普通に起動するには「MyFleetGirls.bat」を起動すれば問題ないかと思います。
-<img src="@Image.setup("myfleet_bat")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/myfleet_bat.png' | relative_url }}" class="img-rounded" />
 
 そうすると黒い画面が出ます。
-<img src="@Image.setup("myfleet_console")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/myfleet_console.png' | relative_url }}" class="img-rounded" />
 
 これで起動は完了です。
 
@@ -296,15 +296,15 @@ MyFleetGirlsにログインできるようになると嫁艦設定などがで�
 詳細はFAQを参照してください。
 
 まず、MyFleetGirlsのフォルダの「application.conf.sample」をコピーして貼り付けて、`application.conf - コピー.sample`を作成します。
-<img src="@Image.setup("conf_copy")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/conf_copy.png' | relative_url }}" class="img-rounded" />
 
 次に、作成した「application.conf - コピー.sample」をメモ帳で開きます。
 
 そして、`# pass: abcde`の部分の`#`を削除して`abcde`の部分に好きなパスワードを設定し、保存して閉じます。
-<img src="@Image.setup("memo_pass")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/memo_pass.png' | relative_url }}" class="img-rounded" />
 
 `application.conf - コピー.sample`を名前を変えて、`application.conf`に変更すれば完成です。
-<img src="@Image.setup("app_conf")" class="img-rounded" />
+<img src="{{ '/assets/img/setup/app_conf.png' | relative_url }}" class="img-rounded" />
 
 MyFleetGirls.batと艦これを起動しなおして、MyFleetGirlsのウェブサイトでログインしてみてください。
 

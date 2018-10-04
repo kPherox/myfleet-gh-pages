@@ -1,6 +1,8 @@
 
 version: 0.9.9
 
+date: 2014-04-15T22:42:00+09:00
+
 changes:
   server:
     - description: 主にStatisticsのUIを修正

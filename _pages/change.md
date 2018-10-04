@@ -17,17 +17,20 @@ permalink: /change
 
 ## 過去のChange Log
 
-- <span class="label label-warning" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Client</span>は各ユーザのProxy Serverのバージョンアップ
-- <span class="label label-info" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Server</span>はサーバ側のバージョンアップです
-- <span class="label label-primary" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Common</span>は全体のバージョンアップで比較的大きい変更が多いです
+- <span class="label label-primary">Common</span>は全体のバージョンアップで比較的大きい変更が多いです
+- <span class="label label-warning">Client</span>は各ユーザのProxy Serverのバージョンアップ
+- <span class="label label-info">Server</span>はサーバ側のバージョンアップです
 
-{% for hash in site.data.releases %}{% assign release = hash[1] %}
+{% assign releases = '' | split: '' %}
+{% for releaseHash in site.data.releases %}{% assign releases = releases | unshift: releaseHash[1] %}{% endfor %}
+{% assign releases = releases | sort: 'date' | reverse %}
+{% for release in releases %}
 {% assign common = release.changes.common %}{% assign client = release.changes.client %}{% assign server = release.changes.server %}
-### Ver{{ release.version }}
+### Ver{{ release.version }} ({{ release.date | date: "%Y-%m-%d" }})
 
-{% for change in common %}- <span class="label label-primary" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Common</span>{{ change.description }}
-{% endfor %}{% for change in client %}- <span class="label label-warning" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Client</span>{{ change.description }}
-{% endfor %}{% for change in server %}- <span class="label label-info" style="width:68px;display:inline-block;padding:.4em;margin-right:.3em;">Server</span>{{ change.description }}
+{% for change in common %}- <span class="label label-primary">Common</span>{{ change.description }}
+{% endfor %}{% for change in client %}- <span class="label label-warning">Client</span>{{ change.description }}
+{% endfor %}{% for change in server %}- <span class="label label-info">Server</span>{{ change.description }}
 {% endfor %}
 
 {% endfor %}

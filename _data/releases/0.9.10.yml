@@ -1,6 +1,8 @@
 
 version: 0.9.10
 
+date: 2014-04-17T00:14:00+09:00
+
 changes:
   server:
     - description: 艦娘表示を高速化

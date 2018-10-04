@@ -1,6 +1,8 @@
 
 version: 0.9.5
 
+date: 2014-04-11T23:43:00+09:00
+
 changes:
   server:
     - description: ドックでサウンドが鳴る機能を追加

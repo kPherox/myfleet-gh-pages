@@ -1,6 +1,8 @@
 
 version: 0.9.8
 
+date: 2014-04-15T04:27:00+09:00
+
 changes:
   server:
     - description: 艦娘のステータス表示を全体的に修正

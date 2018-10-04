@@ -1,6 +1,8 @@
 
 version: 0.9.3
 
+date: 2014-04-08T22:34:00+09:00
+
 changes:
   server:
     - description: 名前から装備開発レシピが検索できる機能追加

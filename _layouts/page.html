@@ -4,19 +4,19 @@ layout: default
 
 <ul class="nav nav-tabs">
     <li class="{% if page.url == '/' %}active{% endif %}">
-        <a href="{{ site.url }}">インストール</a>
+        <a href="{{ '/' | relative_url' }}">インストール</a>
     </li>
     <li class="{% if page.url == '/setup_detail' %}active{% endif %}">
-        <a href="{{ site.url }}/setup_detail">セットアップ手順</a>
+        <a href="{{ '/setup_detail' | relative_url' }}">セットアップ手順</a>
     </li>
     <li class="{% if page.url == '/faq' %}active{% endif %}">
-        <a href="{{ site.url }}/faq">FAQ</a>
+        <a href="{{ '/faq' | relative_url' }}">FAQ</a>
     </li>
     <li class="{% if page.url == '/change' %}active{% endif %}">
-        <a href="{{ site.url }}/change">更新履歴</a>
+        <a href="{{ '/change' | relative_url' }}">更新履歴</a>
     </li>
     <li class="{% if page.url == '/author' %}active{% endif %}">
-        <a href="{{ site.url }}/author">作者情報</a>
+        <a href="{{ '/author' | relative_url' }}">作者情報</a>
     </li>
 </ul>
 

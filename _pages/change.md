@@ -21,6 +21,18 @@ permalink: /change
 - <span class="label label-info">Server</span>はサーバ側のバージョンアップです
 - <span class="label label-primary">Common</span>は全体のバージョンアップで比較的大きい変更が多いです
 
+{% for hash in site.data.releases %}{% assign release = hash[1] %}
+{% assign common = release.changes.common %}{% assign client = release.changes.client %}{% assign server = release.changes.server %}
+### Ver{{ release.version }}
+
+{% for change in common %}- <span class="label label-primary">Common</span>{{ change.description }}
+{% endfor %}{% for change in client %}- <span class="label label-warning">Client</span>{{ change.description }}
+{% endfor %}{% for change in server %}- <span class="label label-info">Server</span>{{ change.description }}
+{% endfor %}
+
+{% endfor %}
+
+
 ### Ver0.9.10
 
 - <span class="label label-info">Server</span>艦娘表示を高速化

@@ -1,0 +1,6 @@
+
+version: 0.9.10
+
+changes:
+  server:
+    - description: 艦娘表示を高速化

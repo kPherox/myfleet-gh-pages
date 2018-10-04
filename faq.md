@@ -157,7 +157,7 @@ MyFleetGirlsサイトにログインした状態で自分の任務ページに�
 
 MyFleetGirls では Java(JRE) を利用している為、こちらは出来るだけ最新のものを使用してください。
 MyFleetGirls 自身の更新は殆どの場合自動で行われます。
-別途手動での更新が必要な場合は、公式Twitter（[@@MyFleetGirls](https://twitter.com/MyFleetGirls)）から告知していますのでそちらをご覧下さい。
+別途手動での更新が必要な場合は、公式Twitter（[@MyFleetGirls](https://twitter.com/MyFleetGirls)）から告知していますのでそちらをご覧下さい。
 
 
 ### [Q.艦これ専用ブラウザや他のツールとの併用は可能？](#browser)

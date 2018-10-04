@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: setup_detail
 title: MyFleetGirlsセットアップ手順
-permalinki: /setup_detail
+permalink: /setup_detail
 ---
-
-<div class="row">
-    <section id="getstarted" class="col-sm-9">
 
 # MyFleetGirlsセットアップ手順
 
@@ -149,7 +146,7 @@ jreの後の数字は、「jre7」のように一つだけならそのバージ�
 
 以下のリンクのダウンロードから行いましょう。
 
-<a href="https://myfleet.moe/assets/zip/MyFleetGirls.zip">Downloaderのdownload</a>
+[Downloaderのdownload]({{ site.productUrl }}/assets/zip/MyFleetGirls.zip)
 
 保存場所ですが、作業フォルダを作成してわかりやすい場所に保存することをお勧めします。（このマニュアルでは、「D:\ツール\艦これ」という場所に保存しました。）
 
@@ -192,7 +189,7 @@ IEを開いて右上の歯車のマークの「ツール」をクリックし「
 「接続」タブを選択して「LANの設定」を開きます。
 <img src="@Image.setup("ie_connection")" class="img-rounded" />
 
-「自動構成スクリプトを使用する」にチェックを入れて、アドレスに<a href="https://myfleet.moe@routes.Assets.at("proxy.pac")">https://myfleet.moe@routes.Assets.at("proxy.pac")</a>を加え「OK」を押します。
+「自動構成スクリプトを使用する」にチェックを入れて、アドレスに[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加え「OK」を押します。
 <img src="@Image.setup("ie_proxy")" class="img-rounded" />
 
 以上で設定は完了です。
@@ -218,7 +215,7 @@ IEと同じように「LANの設定」を変更しますが、開く手順が違
 「接続」タブを選択して「LANの設定」を開きます。
 <img src="@Image.setup("ie_connection")" class="img-rounded" />
 
-「自動構成スクリプトを使用する」にチェックを入れて、アドレスに<a href="https://myfleet.moe@routes.Assets.at("proxy.pac")">https://myfleet.moe@routes.Assets.at("proxy.pac")</a>を加え「OK」を押します。
+「自動構成スクリプトを使用する」にチェックを入れて、アドレスに[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加え「OK」を押します。
 <img src="@Image.setup("ie_proxy")" class="img-rounded" />
 
 以上で設定は完了です。
@@ -238,7 +235,7 @@ Firefoxを開いてキーボードの「Alt」を押してメニューを開き�
 「ネットワーク」タブから「接続設定」をクリックします。
 <img src="@Image.setup("firefox_connection")" class="img-rounded" />
 
-「自動プロキシ設定スクリプトURL」を選択し、画像のように<a href="https://myfleet.moe@routes.Assets.at("proxy.pac")">https://myfleet.moe@routes.Assets.at("proxy.pac")</a>を加えて「OK」をクリックします。
+「自動プロキシ設定スクリプトURL」を選択し、画像のように[{{ site.productUrl }}/assets/proxy.pac]({{ site.productUrl }}/assets/proxy.pac)を加えて「OK」をクリックします。
 <img src="@Image.setup("firefox_proxy")" class="img-rounded" />
 
 以上で設定は完了です。
@@ -274,7 +271,7 @@ MyFleetGirlsを使用しないで艦これをプレイする場合は<strong>「
 {: #check}
 
 MyFleetGirlsのWEBサイトに接続します。
-<a href="@URL.Index" target="_blank">@URL.Index</a>
+[{{ site.productUrl }}]({{ site.productUrl }})
 
 「所属基地名」に自分の接続しているサーバーを入力してください。
 
@@ -307,24 +304,6 @@ MyFleetGirlsにログインできるようになると嫁艦設定などがで�
 
 MyFleetGirls.batと艦これを起動しなおして、MyFleetGirlsのウェブサイトでログインしてみてください。
 
-<a href="@URL.Login">ログイン画面</a>
+[ログイン画面]({{ site.productUrl }}/passwd/entire/login)
 
 
-    </section>
-
-    <section class="col-sm-3">
-        <nav id="navbar" class="navbar" data-role="complementary">
-            <ul class="nav">
-                <li><a href="#start">はじめに</a></li>
-                <li><a href="#java_setup">Javaセットアップ</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#extract">解凍</a></li>
-                <li><a href="#proxy">Proxy設定</a></li>
-                <li><a href="#startup">MyFleetGirlsの起動</a></li>
-                <li><a href="#kancolle">艦これを起動する</a></li>
-                <li><a href="#check">動作確認</a></li>
-                <li><a href="#password">パスワードの設定</a></li>
-            </ul>
-        </nav>
-    </section>
-</div>

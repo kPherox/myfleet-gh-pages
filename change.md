@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 更新情報
-permalinki: /change
+permalink: /change
 ---
 
 <section id="change_log">

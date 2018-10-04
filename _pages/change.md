@@ -23,10 +23,11 @@ permalink: /change
 
 {% assign releases = '' | split: '' %}
 {% for releaseHash in site.data.releases %}{% assign releases = releases | unshift: releaseHash[1] %}{% endfor %}
-{% assign releases = releases | sort: 'date' | reverse %}
+{% assign releases = releases | sort: 'date' | reverse %}{% assign nextVersion = 'master' %}
 {% for release in releases %}
 {% assign common = release.changes.common %}{% assign client = release.changes.client %}{% assign server = release.changes.server %}
-### Ver{{ release.version }} ({{ release.date | date: "%Y-%m-%d" }})
+### [Ver{{ release.version }} ({{ release.date | date: "%Y-%m-%d" }})](https://github.com/ttdoda/MyFleetGirls/compare/v{{ release.version }}...{{ nextVersion }})
+{% assign nextVersion = 'v' | append: release.version %}
 
 {% for change in common %}- <span class="label label-primary">Common</span>{{ change.description }}
 {% endfor %}{% for change in client %}- <span class="label label-warning">Client</span>{{ change.description }}

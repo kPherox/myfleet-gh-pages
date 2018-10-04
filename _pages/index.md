@@ -1,6 +1,5 @@
 ---
 layout: page
-title: {{ site.title }}
 permalink: /
 ---
 

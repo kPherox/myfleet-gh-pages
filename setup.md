@@ -5,7 +5,8 @@ permalink: /setup_detail
 ---
 
 <div class="row">
-    <section id="getstarted" class="col-sm-9" markdown="1">
+
+<section id="getstarted" class="col-sm-9" markdown="1">
 
 # MyFleetGirlsセットアップ手順
 
@@ -310,21 +311,8 @@ MyFleetGirls.batと艦これを起動しなおして、MyFleetGirlsのウェブ�
 [ログイン画面]({{ site.productUrl }}/passwd/entire/login)
 
 
-    </section>
+</section>
 
-    <section class="col-sm-3">
-        <nav id="navbar" class="navbar" data-role="complementary">
-            <ul class="nav">
-                <li><a href="#start">はじめに</a></li>
-                <li><a href="#java_setup">Javaセットアップ</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#extract">解凍</a></li>
-                <li><a href="#proxy">Proxy設定</a></li>
-                <li><a href="#startup">MyFleetGirlsの起動</a></li>
-                <li><a href="#kancolle">艦これを起動する</a></li>
-                <li><a href="#check">動作確認</a></li>
-                <li><a href="#password">パスワードの設定</a></li>
-            </ul>
-        </nav>
-    </section>
+{% include setup_detail_tab.html %}
+
 </div>

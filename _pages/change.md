@@ -8,7 +8,7 @@ permalink: /change
 
 ## [Change Log](https://github.com/ttdoda/MyFleetGirls/releases)
 
-現行のChange LogはGitHubのReleaseで管理しているのでこちらをご覧下さい</p>
+現行のChange LogはGitHubのReleaseで管理しているのでこちらをご覧下さい
 
 
 </section>

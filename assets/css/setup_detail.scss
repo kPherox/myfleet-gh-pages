@@ -1,0 +1,50 @@
+---
+---
+
+body { counter-reset: part; }
+
+h2 {
+    counter-reset: chapter;
+
+    &::before {
+        content: counter(part) ". ";
+        counter-increment: part;
+    }
+}
+h3 {
+    counter-reset: section;
+
+    &::before {
+        content: counter(part) ". " counter(chapter) ". ";
+        counter-increment: chapter;
+    }
+}
+h4 {
+    counter-reset: subsection;
+
+    &::before {
+        content: counter(part) ". " counter(chapter) ". " counter(section) ". ";
+        counter-increment: section;
+    }
+}
+h5::before {
+    content: counter(part) ". " counter(chapter) ". " counter(section) ". " counter(subsection) ". ";
+    counter-increment: subsection;
+}
+
+img { margin: 20px; }
+
+.affix-nav {
+    &.affix {
+        top: 0;
+        position: fixed;
+    }
+    &.affix-top {
+        position: static;
+    }
+    &.affix-bottom {
+        position: absolute;
+    }
+}
+
+li.active { background-color: #FFBC3A; }

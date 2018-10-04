@@ -1,6 +1,6 @@
 
 <section class="col-sm-3">
-    <nav id="navbar" class="navbar affix-top" data-role="complementary">
+    <nav id="navbar" class="navbar affix-nav affix-top" data-role="complementary">
         <ul class="nav">
             <li><a href="#start">はじめに</a></li>
             <li><a href="#java_setup">Javaセットアップ</a></li>
@@ -16,6 +16,6 @@
 </section>
 
 <script>functions.push(() => {
-    $('#navbar').affix({offset: {top: 400, bottom: 400}}).on('affix.bs.affix', function() {$(this).css({'top': '0'})});
+    $('#navbar').affix({offset: {top: 400, bottom: 400}});
     $('body').scrollspy({target: 'nav.navbar'});
 });</script>

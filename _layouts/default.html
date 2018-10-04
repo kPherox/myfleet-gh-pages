@@ -9,6 +9,10 @@
         <title>{{ page.title | default: site.title }}</title>
 
         <link rel="stylesheet" href="{{ '/assets/css/common.css?v=' | append: site.github.build_revision | relative_url' }}" />
+
+        {% if page.url == "/setup_detail" %}
+        <link rel="stylesheet" href="{{ '/assets/css/setup_detail.css?v=' | append: site.github.build_revision | relative_url' }}" />
+        {% endif %}
         <script>let functions = []</script>
     </head>
 

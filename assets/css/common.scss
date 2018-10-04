@@ -22,12 +22,10 @@ body { background-color: $base-color; }
 
 // Navigation Tabs Color Settings
 .nav-tabs { border-bottom-color: $gray; }
-.nav-tabs, .nav-pills > li {
-    &.active {
-        & > a, & > a:hover, & > a:focus {
-            background-color: $main-color;
-            color: $black;
-        }
+.nav-tabs > li, .nav-pills > li {
+    &.active > a, & > a:hover, & > a:focus {
+        background-color: $main-color;
+        color: $black;
     }
     & > a:hover {
         background-color: $light-gray;

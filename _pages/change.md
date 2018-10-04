@@ -54,7 +54,7 @@ permalink: /change
 ### Ver0.9.4
 
 - <span class="label label-info">Server</span>細いUIの修正
-- <span class="label label-iprimary">Common</span>とある機能の仕込み
+- <span class="label label-primary">Common</span>とある機能の仕込み
 
 
 ### Ver0.9.3
@@ -78,9 +78,9 @@ permalink: /change
 
 ### Ver0.9.0
 
-- <span class="label label-iprimary">Common</span>Client自動アップデート機能を追加
-- <span class="label label-iprimary">Common</span>艦種を表示
-- <span class="label label-iprimary">Common</span>高速建造をONにして建造すると建造データが送られないバグを修正
+- <span class="label label-primary">Common</span>Client自動アップデート機能を追加
+- <span class="label label-primary">Common</span>艦種を表示
+- <span class="label label-primary">Common</span>高速建造をONにして建造すると建造データが送られないバグを修正
 - <span class="label label-warning">Client</span>装備開発で間違ったFlagshipを送るバグを修正
 - <span class="label label-info">Server</span>新規登録提督が間違っているバグを修正
 

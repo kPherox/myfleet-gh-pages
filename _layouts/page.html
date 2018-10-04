@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<ul class="nav nav-tabs">
+    <li class="{% if page.url == '/' %}active{% endif %}">
+        <a href="{{ site.url }}">インストール</a>
+    </li>
+    <li class="{% if page.url == '/setup_detail' %}active{% endif %}">
+        <a href="{{ site.url }}/setup_detail">セットアップ手順</a>
+    </li>
+    <li class="{% if page.url == '/faq' %}active{% endif %}">
+        <a href="{{ site.url }}/faq">FAQ</a>
+    </li>
+    <li class="{% if page.url == '/change' %}active{% endif %}">
+        <a href="{{ site.url }}/change">更新履歴</a>
+    </li>
+    <li class="{% if page.url == '/author' %}active{% endif %}">
+        <a href="{{ site.url }}/author">作者情報</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    {{ content }}
+</div>

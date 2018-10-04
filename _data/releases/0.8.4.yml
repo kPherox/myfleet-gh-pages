@@ -1,0 +1,8 @@
+
+version: 0.9.0
+
+date: 2014-04-01T00:35:00+09:00
+
+changes:
+  server:
+    - description: 建造統計画面を改良

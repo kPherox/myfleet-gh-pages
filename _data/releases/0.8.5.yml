@@ -1,0 +1,8 @@
+
+version: 0.8.5
+
+date: 2014-04-01T02:08:00+09:00
+
+changes:
+  server:
+    - description: 装備リストを追加

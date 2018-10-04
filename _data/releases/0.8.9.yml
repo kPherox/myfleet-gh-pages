@@ -1,0 +1,9 @@
+
+version: 0.8.9
+
+date: 2014-04-05T01:23:00+09:00
+
+changes:
+  server:
+    - description: 艦娘のConditionに色付け
+    - description: その他細かい見せ方の修正

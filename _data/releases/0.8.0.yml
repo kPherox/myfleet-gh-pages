@@ -1,0 +1,8 @@
+
+version: 0.8.0
+
+date: 2014-03-27T01:21:00+09:00
+
+changes:
+  common:
+    - description: 装備情報を表示

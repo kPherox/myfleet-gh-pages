@@ -1,0 +1,8 @@
+
+version: 0.8.2
+
+date: 2014-03-28T23:24:00+09:00
+
+changes:
+  server:
+    - description: Tweetボタンを追加

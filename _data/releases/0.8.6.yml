@@ -1,0 +1,8 @@
+
+version: 0.9.6
+
+date: 2014-04-02T00:54:00+09:00
+
+changes:
+  server:
+    - description: 装備所持艦娘リストを追加

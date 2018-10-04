@@ -1,0 +1,9 @@
+
+version: 0.8.3
+
+date: 2014-03-30T23:06:00+09:00
+
+changes:
+  server:
+    - description: 建造統計画面の追加
+    - description: 建造・開発のPagingを追加

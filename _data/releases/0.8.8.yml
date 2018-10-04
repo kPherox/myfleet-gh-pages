@@ -1,0 +1,9 @@
+
+version: 0.8.8
+
+date: 2014-04-04T01:47:00+09:00
+
+changes:
+  server:
+    - description: 艦娘名から建造レシピを検索する機能を追加
+    - description: 艦隊リストを表示

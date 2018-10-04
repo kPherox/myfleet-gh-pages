@@ -1,10 +1,10 @@
 
 name: ぽんこつ
 comment: 最近は結構PullRequest貰えますが、昔はほぼ1人でやってました。SakuraのサーバでMyFleetGirls動かしてます
+account:
+    name: ぽんこつ提督
+    id: 10007732
 links:
-  - name: ぽんこつ提督
-    url: ({{ site.productUrl }}/user/10007732
-
   - name: Twitter(@ponkotuy)
     url: https://twitter.com/ponkotuy/
 

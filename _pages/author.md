@@ -6,12 +6,15 @@ permalink: /author
 
 {% for hash in site.data.contributors %}
 {% assign contributor = hash[1] %}
+{% assign account = contributor %}
 ## {{ contributor.name }}
 
 {{ contributor.comment }}
 
+- [{{ account.name }}]({{ site.productUrl }}/user/{{ account.id }})
+
 {% for link in contributor.links %}
-- [{{ link.name }}]({{ link.url }}){{{ link.description | default: "" }}}
+- [{{ link.name }}]({{ link.url }}){{ link.description | default: "" }}
 {% endfor %}
 
 

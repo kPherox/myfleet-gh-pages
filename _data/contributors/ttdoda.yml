@@ -1,10 +1,10 @@
 
 name: いわもと こういち
 comment: 眼鏡っ子管理責任者兼2代目サーバ管理者。眼鏡っ子を讃えよ。
+account:
+    name: doda提督
+    id: 530766
 links:
-  - name: doda提督
-    url: ({{ site.productUrl }}/user/530766
-
   - name: Twitter(@ttdoda)
     url: https://twitter.com/ttdoda/
 

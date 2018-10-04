@@ -1,6 +1,7 @@
 ---
 layout: page
 title: {{ site.title }}
+permalink: /
 ---
 
 <section id="about" markdown="1">

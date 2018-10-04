@@ -1,6 +1,8 @@
 
 title: About MyFleetGirls
 
-productUrl: https://myfleet.moe
+include: ['_pages']
 
 markdown: kramdown
+
+productUrl: https://myfleet.moe

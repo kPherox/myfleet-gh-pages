@@ -1,8 +1,0 @@
-
-version: 0.1.0-SNAPSHOT
-
-date: 2014-03-14T06:41:00+09:00
-
-changes:
-  common:
-    - description: Release Version

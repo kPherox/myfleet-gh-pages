@@ -23,19 +23,34 @@ permalink: /change
 
 {% assign releases = '' | split: '' %}
 {% for releaseHash in site.data.releases %}{% assign releases = releases | unshift: releaseHash[1] %}{% endfor %}
-{% assign releases = releases | sort: 'date' | reverse %}{% assign nextVersion = 'master' %}
-{% for release in releases %}
+{% assign releases = releases | sort: 'date' | reverse %}{% assign nextVersion = 'master' %}{% assign offset = 0 %}{% assign limit = 10 %}
+<ul class="pager">
+<li class="previous disabled">
+    <a href="#"><span aria-hidden="true">←</span> Newer</a>
+</li>
+<li class="next">
+    <a href="#">Older <span aria-hidden="true">→</span></a>
+</li>
+</ul>
+<div id="pagination">
+</div>
+{% assign releasesPages = releases | size | divided_by: limit %}{% for i in (0..releasesPages) %}
+<div id="page-{{ i | plus: 1}}" style="display:none" markdown="1">
+{% for release in releases limit:limit offset:offset %}
 {% assign common = release.changes.common %}{% assign client = release.changes.client %}{% assign server = release.changes.server %}
+
 ### [Ver{{ release.version }} ({{ release.date | date: "%Y-%m-%d" }})](https://github.com/ttdoda/MyFleetGirls/compare/v{{ release.version }}...{{ nextVersion }})
+
+{% for change in common %}
+- <span class="label label-primary">Common</span>{{ change.description }}{% endfor %}{% for change in client %}
+- <span class="label label-warning">Client</span>{{ change.description }}{% endfor %}{% for change in server %}
+- <span class="label label-info">Server</span>{{ change.description }}{% endfor %}
+
 {% assign nextVersion = 'v' | append: release.version %}
-
-{% for change in common %}- <span class="label label-primary">Common</span>{{ change.description }}
-{% endfor %}{% for change in client %}- <span class="label label-warning">Client</span>{{ change.description }}
-{% endfor %}{% for change in server %}- <span class="label label-info">Server</span>{{ change.description }}
 {% endfor %}
-
-{% endfor %}
-
+</div>
+{% assign offset = offset | plus: limit %}{% endfor %}
+<script>functions.push(()=>{var page=0;$('#page-'+(page+1)).css('display','');$('.pager>.previous').click((e)=>{e.preventDefault();if(page===0){return;}$('#page-'+(page+1)).css('display','none');page=page-1;$('#page-'+(page+1)).css('display','');if(page===0){$('.pager>.previous').addClass('disabled');}if(page!=={{ releasesPages }}){$('.pager>.next').removeClass('disabled');}return;});$('.pager>.next').click((e)=>{e.preventDefault();if(page==={{ releasesPages }}){return;}$('#page-'+(page+1)).css('display','none');page=page+1;$('#page-'+(page+1)).css('display','');if(page==={{ releasesPages }}){$('.pager>.next').addClass('disabled');}if(page!==0){$('.pager>.previous').removeClass('disabled');}return;});});</script>
 
 ### Ver0.7.0
 

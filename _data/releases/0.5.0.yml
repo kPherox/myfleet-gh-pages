@@ -1,0 +1,9 @@
+
+version: 0.5.0
+
+date: 2014-03-19T01:13:00+09:00
+
+changes:
+  client:
+    - description: Postできない致命的なバグを修正
+    - description: 改の画像が異なる場合は別で中破画像の有無が付くように

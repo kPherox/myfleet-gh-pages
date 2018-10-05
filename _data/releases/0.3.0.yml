@@ -1,0 +1,8 @@
+
+version: 0.3.0
+
+date: 2014-03-16T23:20:00+09:00
+
+changes:
+  common:
+    - description: 装備開発履歴を実装

@@ -1,0 +1,10 @@
+
+version: 0.6.1
+
+date: 2014-03-23T17:26:00+09:00
+
+changes:
+  server:
+    - description: 嫁艦が間違っているバグを修正
+  client:
+    - description: 初期設定のurl.postをponkotuy.com:9003に変更

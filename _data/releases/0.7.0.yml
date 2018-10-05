@@ -1,0 +1,10 @@
+
+version: 0.7.0
+
+date: 2014-03-25T07:49:00+09:00
+
+changes:
+  common:
+    - description: 海域進捗を表示
+  server:
+    - description: routesのこまいところを修正

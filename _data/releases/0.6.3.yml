@@ -1,0 +1,9 @@
+
+version: 0.6.3
+
+date: 2014-03-23T22:12:00+09:00
+
+changes:
+  server:
+    - description: navbar表示を追加
+    - description: 画像URLにHEAD Methodを実装

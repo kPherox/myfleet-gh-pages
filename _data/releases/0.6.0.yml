@@ -1,0 +1,11 @@
+
+version: 0.6.0
+
+date: 2014-03-23T16:03:00+09:00
+
+changes:
+  client:
+    - description: 画像upload機能を追加
+  server:
+    - description: 嫁艦・旗艦情報表示を追加
+    - description: ユーザページのURLを分離

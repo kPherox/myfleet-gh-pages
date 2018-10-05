@@ -1,0 +1,8 @@
+
+version: 0.5.1
+
+date: 2014-03-19T05:11:00+09:00
+
+changes:
+  server:
+    - description: 装備開発履歴に旗艦の表示を追加

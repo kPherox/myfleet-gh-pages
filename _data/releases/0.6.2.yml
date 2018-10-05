@@ -1,0 +1,8 @@
+
+version: 0.6.2
+
+date: 2014-03-23T19:01:00+09:00
+
+changes:
+  client:
+    - description: 建造・開発履歴が更新されないバグを修正

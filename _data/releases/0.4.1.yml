@@ -1,0 +1,8 @@
+
+version: 0.4.1
+
+date: 2014-03-18T21:59:00+09:00
+
+changes:
+  common:
+    - description: Master登録者を追加
